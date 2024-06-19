@@ -19,7 +19,16 @@ class RabbitMQ
             user: config('rabbitmq.user'),
             password: config('rabbitmq.password'),
             vhost: config('rabbitmq.vhost'),
+            insist: config('rabbitmq.insist', false),
+            login_method: config('rabbitmq.login_method', 'AMQPLAIN'),
+            login_response: config('rabbitmq.login_response'),
+            locale: config('rabbitmq.locale', 'en_US'),
+            connection_timeout: config('rabbitmq.connection_timeout', 3.0),
+            read_write_timeout: config('rabbitmq.read_write_timeout', 3.0),
+            context: config('rabbitmq.context'),
+            keepalive: config('rabbitmq.keepalive', false),
             heartbeat: config('rabbitmq.heartbeat', 0),
+            channel_rpc_timeout: config('rabbitmq.channel_rpc_timeout', 0.0),
         );
 
         $this->channel = $this->connection->channel();

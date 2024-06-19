@@ -9,7 +9,16 @@ return [
     'user' => env('RABBITMQ_USER', 'guest'),
     'password' => env('RABBITMQ_PASSWORD', 'guest'),
     'vhost' => env('RABBITMQ_VHOST', '/'),
+    'insist' => env('RABBITMQ_INSIST', false),
+    'login_method' => env('RABBITMQ_LOGIN_METHOD', 'AMQPLAIN'),
+    'login_response' => env('RABBITMQ_LOGIN_RESPONSE'),
+    'locale' => env('RABBITMQ_LOCALE', 'en_US'),
+    'connection_timeout' => env('RABBITMQ_CONNECTION_TIMEOUT', 3.0),
+    'read_write_timeout' => env('RABBITMQ_READ_WRITE_TIMEOUT', 3.0),
+    'context' => env('RABBITMQ_CONTEXT'),
+    'keepalive' => env('RABBITMQ_KEEPALIVE', false),
     'heartbeat' => env('RABBITMQ_HEARTBEAT', 0),
+    'channel_rpc_timeout' => env('RABBITMQ_CHANNEL_RPC_TIMEOUT', 0.0),
 
     'event-consumers' => [
 //        [
