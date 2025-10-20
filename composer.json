@@ -35,10 +35,10 @@
         "nunomaduro/collision": "^7",
         "nunomaduro/larastan": "^2.0",
         "orchestra/testbench": "^8.0 || ^9.0",
-        "pestphp/pest": "^2.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
+        "pestphp/pest": "^1.21 || ^2.0",
         "phpunit/phpunit": "^9.5 || ^10.0"
     },
     "autoload": {
